@@ -2,6 +2,7 @@
 
 use App\Models\Product;
 use App\Models\Transaction;
+use App\Models\account;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,3 +41,9 @@ Route::get('/admin/transaction', function () {
         "transaction" => Transaction::all()
     ]);
 })->name('transaction');
+
+Route::get('/admin/account', function () {
+    return view('admin.account', [
+        "account" => account::all()
+    ]);
+})->name('account');
