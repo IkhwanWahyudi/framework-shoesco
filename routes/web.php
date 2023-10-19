@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+Route::get('/auth', function () {
+    return view('auth.auth');
+})->name('login');
+
+Route::get('/customer/home', function () {
+    return view('customer.home', [
+        "product" => Product::all()
+    ]);
+})->name('buy');
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard', [
+        "product" => Product::all()
+    ]);
+})->name('admin');

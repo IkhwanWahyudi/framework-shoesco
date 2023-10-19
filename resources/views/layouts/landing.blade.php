@@ -12,7 +12,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="font-quicksand">
+<body class="font-quicksand w-full">
     @yield('content')
 </body>
 
