@@ -17,7 +17,7 @@
                     </svg>
                 </a>
                 <p class="text-white">|</p>
-                <a href="{{ route('home') }}">
+                <a href="{{ route('buy') }}">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="white" class="w-6 h-6 hover:stroke-[#985d44] transition ease-in">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -33,7 +33,7 @@
                     </svg>
                 </a>
             </div>
-            <a href="{{ route('home') }}" class="flex justify-center bg-transparent opacity-80 w-full">
+            <a href="{{ route('buy') }}" class="flex justify-center bg-transparent opacity-80 w-full">
                 <img src="{{ asset('assets/images/logo-white.png') }}" alt="Logo Shoes.co" class="w-fit h-[100px] top-3">
             </a>
             <div id="day-contact"
@@ -47,13 +47,26 @@
                             d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                     </svg>
                 </a>
+                <p>|</p>
+                <a href="{{ route('home') }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 hover:stroke-[#985d44] transition ease-in">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                    </svg>
+                </a>
             </div>
         </nav>
         <div class="absolute w-[100%] h-[100%] bg-[#000000ac]">
             <div
                 class="w-full h-full flex flex-col self-center place-content-center text-center gap-7 rounded-lg z-40 mt-20">
                 <p class="text-6xl self-center font-medium text-white">Accompanying at every step</p>
-                <p class="text-white w-[800px] self-center text-left"><strong>WELCOME TO SHOES.CO -</strong> A Paradise for Shoe Enthusiasts! At Shoes.co, lovers of footwear will uncover the captivating world of our extensive collection. As like-minded shoe aficionados, you'll explore the transformative secrets of our unique and liberating culture. Nestled within the digital realm, Shoes.co is where style-minded individuals converge, diverse shoe cultures intermingle, and lasting footwear connections are formed. Shop with us and step into a world of shoe-tastic possibilities!</p>
+                <p class="text-white w-[800px] self-center text-left"><strong>WELCOME TO SHOES.CO -</strong> A Paradise for
+                    Shoe Enthusiasts! At Shoes.co, lovers of footwear will uncover the captivating world of our extensive
+                    collection. As like-minded shoe aficionados, you'll explore the transformative secrets of our unique and
+                    liberating culture. Nestled within the digital realm, Shoes.co is where style-minded individuals
+                    converge, diverse shoe cultures intermingle, and lasting footwear connections are formed. Shop with us
+                    and step into a world of shoe-tastic possibilities!</p>
                 <div
                     class="w-[750px] h-[100px] flex flex-row justify-around place-content-center self-center bg-[#ffffff3e] rounded-[20px] z-40 p-3 mt-20">
                     <img src="{{ asset('assets/images/converse-logo.png') }}" alt="" class="w-[150px] h-fit">

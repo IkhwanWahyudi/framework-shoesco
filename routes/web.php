@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Product;
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,3 +34,9 @@ Route::get('/admin/dashboard', function () {
         "product" => Product::all()
     ]);
 })->name('admin');
+
+Route::get('/admin/transaction', function () {
+    return view('admin.transaction', [
+        "transaction" => Transaction::all()
+    ]);
+})->name('transaction');
