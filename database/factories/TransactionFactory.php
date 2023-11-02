@@ -20,7 +20,7 @@ class TransactionFactory extends Factory
         $product = \App\Models\Product::inRandomOrder()->first();
 
         return [
-            'account_id' => \App\Models\Account::factory(),
+            'user_id' => \App\Models\User::factory(),
             'product_id' => $product->id,
             'quantity' => $this->faker->numberBetween(1, $product->amount), // "quantity" mengikuti jumlah produk yang tersedia
             'total_price' => $product->price * $this->faker->numberBetween(1, $product->amount), // Menghitung total harga berdasarkan harga produk dan quantity

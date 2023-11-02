@@ -15,11 +15,12 @@ return new class extends Migration
             $table->id();
             $table->integer('price');
             $table->string('name');
+            $table->string('description');
             $table->string('color');
             $table->string('brand');
             $table->integer('size');
             $table->integer('amount');
-            $table->foreignId('account_id')->constrained();
+            $table->string('image_path');
             $table->timestamps();
         });
     }

@@ -48,7 +48,7 @@
                     </svg>
                 </a>
                 <p>|</p>
-                <a href="{{ route('home') }}">
+                <a href="{{ route('logout') }}">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6 hover:stroke-[#985d44] transition ease-in">
                         <path stroke-linecap="round" stroke-linejoin="round"

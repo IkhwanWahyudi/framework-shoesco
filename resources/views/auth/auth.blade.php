@@ -6,8 +6,18 @@
             <a href="{{ route('home') }}">
                 <img src="{{ asset('assets/images/logo-white.png') }}" alt="" class="w-[100px]">
             </a>
-            <div class="h-[350px] w-[500px] flex flex-col justify-around text-center rounded-lg z-40 bg-[#ffffff68]">
-                <form action="{{ route('buy') }}" method="get" class="w-full flex flex-col items-center">
+            <div class="h-[400px] w-[500px] flex flex-col justify-around text-center rounded-lg z-40 bg-[#ffffff68]">
+                <form action="{{ route('login.action') }}" method="post" class="w-full flex flex-col items-center">
+                    @csrf
+                    @if(session('error'))
+                        <div class="w-[350px] relative mb-6">
+                            <div class="p-2 rounded-sm bg-red-100 ring-1 ring-red-500">
+                                <p class="text-red-500">
+                                    {{ session('error') }}
+                                </p>
+                            </div>
+                        </div>
+                    @endif
                     <div class="w-[350px] relative">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
                             <svg class="h-6 fill-[#5f7251]" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -28,14 +38,11 @@
                         <input type="password" name="password" placeholder="Password"
                             class="w-full ps-12 pe-4 py-2 bg-slate-50 rounded-sm ring-1 ring-slate-300 focus:outline-none focus:ring-[#5f7251] text-[#5f7251]">
                     </div>
-                    {{-- <div class="w-[350px] relative mt-6 flex justify-start">
-                        <select name="choice" class="w-[200px]">
-                            <option value="admin">Admin</option>
-                            <option value="customer">Customer</option>
-                        </select>
-                    </div> --}}
-                    <button type="submit" class="w-[200px] h-auto py-4 mt-16 text-white font-medium bg-[#5f7251] rounded-md flex justify-center items-center hover:bg-[#49573e]">Login</button>
+                    <button type="submit" class="w-[200px] h-auto py-4 mt-16 text-white font-medium bg-[#5f7251] rounded-md flex justify-center items-center hover:bg-[#49573e]">Sign In</button>
                 </form>
+                <div>
+                    <a href="{{ route('regis') }}" class="text-blue-500 hover:text-blue-900">Don't have an account?</a>
+                </div>
             </div>
         </div>
         <img src="{{ asset('assets/images/background.png') }}" alt="" class="w-screen h-screen object-cover -z-10">

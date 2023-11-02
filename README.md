@@ -19,3 +19,6 @@
 <img src="./public/assets/images/screenshot3.png">
 <img src="./public/assets/images/screenshot4.png">
 <img src="./public/assets/images/screenshot5.png">
+<img src="./public/assets/images/screenshot6.png">
+<img src="./public/assets/images/screenshot7.png">
+<img src="./public/assets/images/screenshot8.png">
